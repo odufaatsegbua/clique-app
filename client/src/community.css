@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+    height: 1200px;
+}
+
+#nav-list {
+    padding-top: 0;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: rgb(34, 61, 119);
+    font-size: 70px;
+    padding-top: 5%;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(34, 61, 119);
+}
+
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(34, 61, 119);
+    
+} 
+
