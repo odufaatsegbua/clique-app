@@ -7,7 +7,7 @@
     },
     "test": {
       "username": "root",
-      "password": "",
+      "password": "Section.80",
       "database": "clique_db",
       "host": "127.0.0.1",
       "dialect": "mysql",
