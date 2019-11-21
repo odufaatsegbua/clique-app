@@ -39,7 +39,7 @@
 <!--LOG IN SECTION-->
 
 <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" id="btn1">Login</button>
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -49,7 +49,7 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="./images/logo_mini.png" alt="logo" class="avatar">
+      <img src="../src/images/logo_mini.png" alt="logo" class="avatar">
     </div>
 
     <div class="container">
@@ -76,14 +76,14 @@ class="close" title="Close Modal">&times;</span>
 <!--SIGN UP SECTION-->
 
 <!-- Button to open the modal -->
-<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+<button onclick="document.getElementById('id02').style.display='block'" id="btn2">Register</button>
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
   <form class="modal-content" action="/action_page.php">
     <div class="imgcontainer">
-            <img src="./images/logo_mini.png" alt="logo" class="avatar">
+            <img src="../src/images/logo_mini.png" alt="logo" class="avatar">
           </div>
     <div class="container">
       <h1>Sign Up</h1>
@@ -133,15 +133,15 @@ class="close" title="Close Modal">&times;</span>
 
        <section class="container-about">
 
-        <div>
+        <div id="text">
             <h1>Welcome To Your Safe Space</h1>
-        </div>
+        
         <h2><strong>who we are</strong></h2>
         <h3>Clique is an online community made for women BY WOMEN, to meet and connect with other women who have a similar story to share.
         <br>
         <h3>Our vision for Clique is to have women of all different shades, ages and walks of life to feel safe enough to give and receive support from one another — because we know as women we are much stronger when we join forces.</h3>
         <br>
-        
+      </div>
 
        </section>
 
@@ -150,14 +150,14 @@ class="close" title="Close Modal">&times;</span>
 
     <section class="container-community">
 
-        <div>
+        <div id="text">
             <h1>Find Your Community</h1>
-        </div>
+        
             <h2><strong>women and stories you can relate to</strong></h2>
             <h3>Join a community where you can freely share your story without fear of judgement. 
             <br>
             <h3>Our online communities are designed for women to find strength in their struggles by letting their voice be heard and having a support group to lean on.</h3>
-
+          </div>
     </section>
 
 
@@ -165,13 +165,13 @@ class="close" title="Close Modal">&times;</span>
 
     <section class="container-connect">
 
-        <div>
+        <div id="text">
           <h1 id="ready-title">Are You Ready</h1>
         </div>
 
             <h2 id="join-title">Join Us Now </h2>
             <h3 id="signup-title">Sign up and lets get talking </h3>
-            <button>Find Your Clique</button>
+            <button id="btn3">Find Your Clique</button>
 
     </section>
 
