@@ -15,7 +15,8 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   login: function(req, res) {
-    db.User.findById(req.params.id)
+    console.log(req.body)
+    db.User.findAll({where: {username:req.body.username}})
       .then(dbModel =>
         bcrypt.compare(req.body.password, dbModel.password, (err, result) => {
           if (result === true) {

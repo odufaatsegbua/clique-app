@@ -7,12 +7,17 @@ router
   .get(userController.findAll)
   .post(userController.create);
 
+
 // Matches with "/api/items/:id"
 router
   .route("/:id")
   .get(userController.findById)
-  .post(userController.login)
+  
   .put(userController.update)
   .delete(userController.remove);
+router
+.route("/login")
+.post(userController.login)
+
 
 module.exports = router;
