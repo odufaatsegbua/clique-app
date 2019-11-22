@@ -9,7 +9,7 @@ const app = express();
 // Init Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(express.static("client/src"));
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder

@@ -5,8 +5,7 @@ const saltRounds = 13;
 // Defining methods for the userController
 module.exports = {
   findAll: function(req, res) {
-    db.User.find(req.query)
-      .sort({ date: -1 })
+    db.User.findAll({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -31,11 +30,15 @@ module.exports = {
   create: function(req, res) {
     bcrypt.genSalt(saltRounds, function(err, salt) {
       bcrypt.hash(req.body.password, salt, function(err, hash) {
+        console.log(req.body)
         // Store hash in your password DB.
         let newUser = {
+          firstname: req.body.firstname,
+          lastname: req.body.lastname,
           username: req.body.username,
           password: hash,
-          email: req.body.email
+          email: req.body.email,
+          description: req.body.description
         };
         db.User.create(newUser)
           .then(dbModel => res.json(dbModel))
