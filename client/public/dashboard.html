@@ -67,6 +67,83 @@
 
 
         </section>
+        <hr>
+
+        <div class="container" style="margin-top:30px">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h2>About Me</h2>
+                    <h5>Upload a photo</h5>
+                    <div class="img">
+
+                    </div>
+                    <form>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="customFile">
+                              <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                          </form>
+                    <hr>
+                    <p>Have name, email, phone number</p>
+                    <h3>Some Links</h3>
+                    <p>Lorem ipsum dolor sit ame.</p>
+                    <ul class="nav nav-pills flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                    </ul>
+                    <hr class="d-sm-none">
+                  </div>
+                  <div class="col-sm-8">
+                    <h2>Your Daily Message</h2>
+                    <h5>Dec 5, 2019</h5>
+                    <p>"Infuse your life with action. Don't wait for it to happen. Make it happen. Make your own future. Make your own hope. Make your own love. And whatever your beliefs, honor your creator, not by passively waiting for grace to come down from upon high, but by doing what you can to make grace happen... yourself, right now, right down here on Earth."</p>
+                    <br>
+                    <hr>
+                    <h2>Your Communities</h2>
+                    <h5>Communities you have joined</h5>
+                    <div class="fakeimg">Fake Image</div>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <!--SCRIPT FOR UPLOADING PIC-->
+
+              <script>
+                    // Add the following code if you want the name of the file appear on select
+                    $(".custom-file-input").on("change", function() {
+                      var fileName = $(this).val().split("\\").pop();
+                      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                    });
+            </script>
+
+
+
+
+
+
+<!--FOOTER -->
+
+        <section>
+                <footer>
+                    <ul>
+                       <a href="cliqueinfo.html"><li>About Us</li></a>
+                        <a href=""><li>Contact</li></a>
+                        <a href="cliqueFAQ.html"><li>FAQ</li></a>
+                        <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
+                        <a href=""><li>Legal</li></a>
+                    </ul>
+                    <p>Copyright &copy; Clique</p>
+                </footer>
+            </section>          
 
         <div class="row-one">
                 <div class="column" style="background-color:#aaa;">Column</div>
