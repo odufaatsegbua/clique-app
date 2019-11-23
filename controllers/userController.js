@@ -14,8 +14,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
+  // this route should direct to user dashboard if password is correct
   login: function(req, res) {
     console.log(req.body)
+    // this should search database for where usersame 
+    // else res.send "incorrect username or password"
     db.User.findAll({where: {username:req.body.username}})
       .then(dbModel =>
         bcrypt.compare(req.body.password, dbModel.password, (err, result) => {

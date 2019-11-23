@@ -9,6 +9,7 @@ router
 
 
 // Matches with "/api/items/:id"
+// how to add api route that leads to dashboard.html after login button
 router
   .route("/:id")
   .get(userController.findById)
