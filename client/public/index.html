@@ -1,149 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-  <link rel="stylesheet" href="/styles.css">
-  
-    <title>Clique</title>
-    
-     <!--Required Meta tags-->
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
- 
-     <!-- Bootstrap core CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- 
-   <!--Font Awesome Social Buttons-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-   <!--Script-->
-   <script src="https://kit.fontawesome.com/be5d34a421.js" crossorigin="anonymous"></script>
- 
-     <!--Style Sheets-->
-     <link rel="stylesheet" href="/css/reset.css">
-     <link rel="stylesheet" type="text/css" href="/style.css">
-     <link rel="stylesheet" type="text/css" href="/login.css">
-     <link rel="stylesheet" type="text/css" href="/signup.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    
- 
-     <!--Fonts Link-->
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--Fonts Link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-<!--START OF BODY SECTION-->
-
-<body>
-
-<!--LOG IN SECTION-->
-
-<!-- Button to open the modal login form -->
-<button>Login</button>
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
 
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 
-<!--SIGN UP SECTION-->
-
-<!-- Button to open the modal -->
-<button>Register</button>
-
-
-
-<!--CENTER PAGE PART OF MAIN PAGE-->
-        <div class="centerpage">
-
-
-       </div>
-
-
-       <!--ABOUT SECTION-->
-
-       <section class="container-about">
-
-        <div id="text">
-            <h1>Welcome To Your Safe Space</h1>
-        
-        <h2><strong>who we are</strong></h2>
-        <h3>Clique is an online community made for women BY WOMEN, to meet and connect with other women who have a similar story to share.
-        <br>
-        <h3>Our vision for Clique is to have women of all different shades, ages and walks of life to feel safe enough to give and receive support from one another — because we know as women we are much stronger when we join forces.</h3>
-        <br>
-      </div>
-
-       </section>
-
-
-       <!--COMMUNITY SECTION-->
-
-    <section class="container-community">
-
-        <div id="text">
-            <h1>Find Your Community</h1>
-        
-            <h2><strong>women and stories you can relate to</strong></h2>
-            <h3>Join a community where you can freely share your story without fear of judgement. 
-            <br>
-            <h3>Our online communities are designed for women to find strength in their struggles by letting their voice be heard and having a support group to lean on.</h3>
-          </div>
-    </section>
-
-
-        <!--JOIN US SECTION-->
-
-    <section class="container-connect">
-
-        <div id="text">
-          <h1 id="ready-title">Are You Ready</h1>
-        </div>
-
-            <h2 id="join-title">Join Us Now </h2>
-            <h3 id="signup-title">Sign up and lets get talking </h3>
-            <button id="btn3">Find Your Clique</button>
-
-    </section>
-
-      <!--FOOTER-->
-
-    <section>
-        <footer>
-            <ul>
-               <a href="cliqueinfo.html"><li>About Us</li></a>
-                <a href=""><li>Contact</li></a>
-                <a href="cliqueFAQ.html"><li>FAQ</li></a>
-                <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
-                <a href=""><li>Legal</li></a>
-            </ul>
-            <p>Copyright &copy; Clique</p>
-        </footer>
-    </section>
-
-    <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-     </script>
-
-<script>
-        // Get the modal
-        var modal = document.getElementById('id02');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-  
-    <script src="/app.compiled.js"></script>
-</body>
-
+  </body>
 </html>
