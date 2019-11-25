@@ -22,9 +22,9 @@
  
      <!--Style Sheets-->
      <link rel="stylesheet" href="/css/reset.css">
-     <link rel="stylesheet" type="text/css" href="../src/style.css">
-     <link rel="stylesheet" type="text/css" href="../src/login.css">
-     <link rel="stylesheet" type="text/css" href="../src/signup.css">
+     <link rel="stylesheet" type="text/css" href="/style.css">
+     <link rel="stylesheet" type="text/css" href="/login.css">
+     <link rel="stylesheet" type="text/css" href="/signup.css">
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     
  
@@ -48,17 +48,17 @@
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" action="/api/users/login" method="POST">
     <div class="imgcontainer">
       <img src="../src/images/logo_mini.png" alt="logo" class="avatar">
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
 
       <button type="submit">Login</button>
       <label>
@@ -82,7 +82,7 @@ class="close" title="Close Modal">&times;</span>
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
-  <form class="modal-content" action="/action_page.php">
+  <form class="modal-content" action="/api/users" method="POST">
     <div class="imgcontainer">
             <img src="../src/images/logo_mini.png" alt="logo" class="avatar">
           </div>
@@ -91,10 +91,10 @@ class="close" title="Close Modal">&times;</span>
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="frstname"><b>First Name</b></label>
-      <input type="text" placeholder="First Name" name="name" required>
+      <input type="text" placeholder="First Name" name="firstname" required>
 
       <label for="lstname"><b>Last Name</b></label>
-      <input type="text" placeholder="Last Name" name="name" required>
+      <input type="text" placeholder="Last Name" name="lastname" required>
 
       <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Desired Username" name="username" required>
@@ -103,10 +103,13 @@ class="close" title="Close Modal">&times;</span>
       <input type="text" placeholder="Enter Email" name="email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="password" required>
 
       <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="password" placeholder="Repeat Password" name="repeat-password" required>
+
+      <label for="psw-repeat"><b>Tell us what type of support you need</b></label>
+      <input type="text" placeholder="How can we help" name="description" required>
 
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
