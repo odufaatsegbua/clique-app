@@ -2,14 +2,14 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 5000;
 const routes = require("./routes");
-const mongoose = require("mongoose");
+const db = require("./models");
 
 const app = express();
 
 // Init Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(express.static("client/src"));
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
@@ -22,10 +22,23 @@ if (process.env.NODE_ENV === "production") {
 // Including the routes
 app.use(routes);
 
-// Setting up mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fakazon");
+var syncOptions = { force: false };
 
-// Starting up the server
-app.listen(PORT, () =>
-  console.log(`The server started on http://localhost:${PORT}`)
-);
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
+
+// Starting the server, syncing our models ------------------------------------/
+db.sequelize.sync(syncOptions).then(function() {
+  app.listen(PORT, function() {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
+  });
+});
+
+module.exports = app;

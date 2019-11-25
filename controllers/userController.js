@@ -5,8 +5,7 @@ const saltRounds = 13;
 // Defining methods for the userController
 module.exports = {
   findAll: function(req, res) {
-    db.User.find(req.query)
-      .sort({ date: -1 })
+    db.User.findAll({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -15,8 +14,13 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
+  // this route should direct to user dashboard if password is correct
   login: function(req, res) {
-    db.User.findById(req.params.id)
+    console.log(req.body)
+    // this should search database for where usersame 
+    // else res.send "incorrect username or password"
+    db.User.findAll({where: {username:req.body.username}})
       .then(dbModel =>
         bcrypt.compare(req.body.password, dbModel.password, (err, result) => {
           if (result === true) {
@@ -31,11 +35,15 @@ module.exports = {
   create: function(req, res) {
     bcrypt.genSalt(saltRounds, function(err, salt) {
       bcrypt.hash(req.body.password, salt, function(err, hash) {
+        console.log(req.body)
         // Store hash in your password DB.
         let newUser = {
+          firstname: req.body.firstname,
+          lastname: req.body.lastname,
           username: req.body.username,
           password: hash,
-          email: req.body.email
+          email: req.body.email,
+          description: req.body.description
         };
         db.User.create(newUser)
           .then(dbModel => res.json(dbModel))
