@@ -21,14 +21,14 @@ module.exports = {
     // this should search database for where usersame 
     // else res.send "incorrect username or password"
     db.User.findAll({where: {username:req.body.username}})
-      .then(dbModel =>
-        bcrypt.compare(req.body.password, dbModel.password, (err, result) => {
+      .then(dbModel =>{
+        bcrypt.compare(req.body.password, dbModel[0].password, (err, result) => {
           if (result === true) {
             res.json(dbModel);
           } else {
             res.send("Incorrect username or password!");
           }
-        })
+        })}
       )
       .catch(err => res.status(422).json(err));
   },
