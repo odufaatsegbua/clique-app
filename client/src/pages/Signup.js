@@ -86,7 +86,7 @@ return (
 
       <div className="inputContainer">
       <label for="description">Tell us how we can support your current situation</label>
-        <input className="textArea" value={this.state.description} onChange={this.handleInputChange} type="text" placeholder="Description" id="description" name="description" />
+        <input className="textArea" value={this.state.description} onChange={this.handleInputChange} type="text" placeholder="e.g Currenly in an abusive relationship" id="description" name="description" />
       </div>
     
       <button type="submit" onClick={this.handleFormSubmit} className="btn">Register</button>

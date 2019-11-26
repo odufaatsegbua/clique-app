@@ -8,5 +8,6 @@ module.exports = function(sequelize, DataTypes) {
     password: DataTypes.STRING,
     description: DataTypes.TEXT
   });
+  // User.hasMany(, {foreignKey: 'countryCode', sourceKey: 'isoCode'});
   return User;
 };
