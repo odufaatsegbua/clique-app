@@ -1,24 +1,36 @@
 import React from 'react';
+import Axios from 'axios';
 
 export default class Dashboard extends React.Component {
     state = {
         name: "",
         email: "",
-        phone: ""
-
+        phone: "",
+        user: []
     };
+
 
     // // Add the following code if you want the name of the file appear on select
     // $(".custom-file-input").on("change", function() {
     //     var fileName = $(this).val().split("\\").pop();
     //     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     //   });
-
+    componentDidMount(){
+        let userId = localStorage.getItem("userID");
+        Axios.get("/api/users/" + userId)
+        .then((response) => {
+            console.log(response)
+            this.setState({
+                user: response.data[0]
+            })
+            console.log("state " + (this.state.user))
+        })
+    }
     render() {
         return (
             <div>
                 <section>
-                    <h1>Welcome to your profile</h1>
+                    <h1>Welcome {this.state.user.firstname} {this.state.user.lastname}</h1>
                 </section>
                 <hr />
                 <div className="container" style={{ marginTop: "30px" }} >

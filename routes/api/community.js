@@ -32,26 +32,8 @@ const communityController = {
         })}
       )
       .catch(err => res.status(422).json(err));
-  },
-  // creates new user in database
-  create: function(req, res) {
-    bcrypt.genSalt(saltRounds, function(err, salt) {
-      bcrypt.hash(req.body.password, salt, function(err, hash) {
-        console.log(req.body)
-        // Store hash in your password DB.
-        let newUser = {
-          firstname: req.body.firstname,
-          lastname: req.body.lastname,
-          username: req.body.username,
-          password: hash,
-          email: req.body.email,
-          description: req.body.description
-        };
-        db.Community.create(newUser)
-          .then(dbModel => res.json(dbModel))
-          .catch(err => res.status(422).json(err));
-      });
-    });
+  
+  
   },
   update: function(req, res) {
     db.Community.findOneAndUpdate({ _id: req.params.id }, req.body)
