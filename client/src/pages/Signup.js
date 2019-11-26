@@ -10,6 +10,26 @@ password: "",
 
 };
 
+// usersignup = () => {
+// .post
+// }
+
+
+
+// $(document).ready(function(){
+//   $("#submit").click(function(){
+//     $.post("/api/users",
+//     {
+//       username: $("#username").val(),
+//       password: $("#password").val()
+//     },
+//     function(data,status){
+//       var user = data;
+//       localStorage.setItem('userID', user.id);
+//     });
+//   });
+// });
+
 render() {
 return (
 <div>
@@ -41,7 +61,6 @@ return (
       <button type="submit" className="btn">Register</button>
     </form>
 
-
     <section>
         <footer>
             <ul>
@@ -58,3 +77,5 @@ return (
 )
 }
 }
+
+export default Signup;
