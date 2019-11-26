@@ -17,22 +17,10 @@ export default class Home extends React.Component {
         lastname: "",
         email: "",
         password: "",
-        passwordRepeat: "",
-        show: false,
-        show1: false
+        passwordRepeat: ""
+        
         }
-        showModal = () => {
-          this.setState({ show: true });
-        };
-        showModal1 = () => {
-          this.setState({ show1: true });
-        };
-        hideModal = () => {
-          this.setState({ show: false });
-        };
-        hideModal1 = () => {
-          this.setState({ show1: false });
-        };
+      
         handleInputChange = event => {
           const { name, value } = event.target;
           this.setState({
@@ -64,7 +52,7 @@ export default class Home extends React.Component {
             
             <input type="password" value={this.state.password} onChange={this.handleInputChange} placeholder="Enter Password" name="password" required />
 
-            {/* onclick fucntion for submit */}
+            
             <button type="submit">Login</button>
             <label>
               <input type="checkbox" checked="checked" name="remember" /> Remember me

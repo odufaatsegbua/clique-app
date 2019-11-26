@@ -4,6 +4,9 @@ import './App.css';
 import NoMatch from "./pages/NoMatch";
 import Home from "./pages/Home";
 import Communities from "./pages/Communities";
+import Dashboard from "./pages/Dashboard";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
 
 class App extends React.Component {
@@ -17,6 +20,12 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/communities" component={Communities} />
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/profile" component={Dashboard} />
+
+
+
 
             <Route component={NoMatch} />
           </Switch>

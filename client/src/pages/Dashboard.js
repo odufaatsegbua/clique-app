@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default class Dashboard extends React.Component{
 state = {
 name="",
@@ -6,6 +7,9 @@ email="",
 phone
 
 };
+
+
+
 render() {
     return(
         <div>
@@ -17,50 +21,50 @@ render() {
 </section>
 <hr>
 
-<div className="container" style={{marginTop:"30px"}} />
-    <div className="row" />
-      <div className="col-sm-4" />
+<div className="container" style={{marginTop:"30px"}} >
+    <div className="row">
+      <div className="col-sm-4">
         <h2>About Me</h2>
         <h5>Upload a photo</h5>
-        <div className="img" />
+        <div className="img">
 
         </div>
         <form>
-                <div className="custom-file" />
+                <div className="custom-file">
                   <input type="file" className="custom-file-input" id="customFile" />
                   <label className="custom-file-label" for="customFile">Choose file</label>
                 </div>
               </form>
         <hr />
-        <div id="userinfo" />
+        <div id="userinfo" >
 
-          <form id="userinfo" />
+          <form id="userinfo">
               <label for="user-input">Name</label>
               <input type="text" id="nameInput" /><br />
         
             
 
               <label for="user-input">Email</label>
-              <input type="text" id="emailInput"><br />
+              <input type="text" id="emailInput" /><br />
         
            
 
               <label for="number-input">Phone Number</label>
-              <input type="text" id="numberInput"><br />
+              <input type="text" id="numberInput" /><br />
         
            
           </form>
        
         </div>
         
-        <hr className="d-sm-none">
+        <hr className="d-sm-none" />
       </div>
       <div className="col-sm-8">
         <h2>Your Daily Message</h2>
         <h5>Dec 5, 2019</h5>
         <p>"Infuse your life with action. Don't wait for it to happen. Make it happen. Make your own future. Make your own hope. Make your own love. And whatever your beliefs, honor your creator, not by passively waiting for grace to come down from upon high, but by doing what you can to make grace happen... yourself, right now, right down here on Earth."</p>
-        <br>
-        <hr>
+        <br />
+        <hr />
         <h2>Your Communities</h2>
         <h5>Communities you have joined</h5>
         <div className="fakeimg">Fake Image</div>

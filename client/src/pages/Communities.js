@@ -5,19 +5,19 @@ export default class Communities extends React.Component {
       <div>
         <nav>
           <div className="header-container">
-            <ul className="nav justify-content-center" id="nav-list">
-              <li className="nav-item">
-                <a className="nav-link" href="dashboard.html">
+            <ul className="nav justifyContentCenter" id="navList">
+              <li className="navItem">
+                <a className="navLink" href="dashboard.html">
                   Dashboard
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="community.html">
+              <li className="navItem">
+                <a className="navLink" href="community.html">
                   Communities
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="">
+              <li className="navItem">
+                <a className="navLink" href="">
                   Get Connected
                 </a>
               </li>
