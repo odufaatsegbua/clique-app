@@ -1,8 +1,11 @@
 import React from 'react';
 export default class Dashboard extends React.Component{
 state = {
+name="",
+email="",
+phone
 
-}
+};
 render() {
     return(
         <div>
@@ -14,36 +17,36 @@ render() {
 </section>
 <hr>
 
-<div className="container" style="margin-top:30px">
-    <div className="row">
-      <div className="col-sm-4">
+<div className="container" style={{marginTop:"30px"}} />
+    <div className="row" />
+      <div className="col-sm-4" />
         <h2>About Me</h2>
         <h5>Upload a photo</h5>
-        <div className="img">
+        <div className="img" />
 
         </div>
         <form>
-                <div className="custom-file">
-                  <input type="file" className="custom-file-input" id="customFile">
+                <div className="custom-file" />
+                  <input type="file" className="custom-file-input" id="customFile" />
                   <label className="custom-file-label" for="customFile">Choose file</label>
                 </div>
               </form>
-        <hr>
-        <div id="userinfo">
+        <hr />
+        <div id="userinfo" />
 
-          <form id="userinfo">
+          <form id="userinfo" />
               <label for="user-input">Name</label>
-              <input type="text" id="name-input"><br>
+              <input type="text" id="nameInput" /><br />
         
             
 
               <label for="user-input">Email</label>
-              <input type="text" id="email-input"><br>
+              <input type="text" id="emailInput"><br />
         
            
 
               <label for="number-input">Phone Number</label>
-              <input type="text" id="number-input"><br>
+              <input type="text" id="numberInput"><br />
         
            
           </form>
