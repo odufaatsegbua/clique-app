@@ -1,20 +1,17 @@
 const router = require("express").Router();
-// const userController = require("../../controllers/userController");
 const db = require("../../models");
-const bcrypt = require("bcrypt");
-const saltRounds = 13;
 
-// Defining methods for the userController
-const userController = {
+// Defining methods for the communityController
+const communityController = {
   findAll: function(req, res) {
-    db.User.findAll({})
+    db.Community.findAll({})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   
   // will search database for specific ID
   findById: function(req, res) {
-    db.User.findById(req.params.id)
+    db.Community.findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -24,7 +21,7 @@ const userController = {
   
     // this should search database for where usersame 
     // else res.send "incorrect username or password"
-    db.User.findAll({where: {username:req.body.username}})
+    db.Community.findAll({where: {username:req.body.username}})
       .then(dbModel =>{
         bcrypt.compare(req.body.password, dbModel[0].password, (err, result) => {
           if (result === true) {
@@ -50,19 +47,19 @@ const userController = {
           email: req.body.email,
           description: req.body.description
         };
-        db.User.create(newUser)
+        db.Community.create(newUser)
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));
       });
     });
   },
   update: function(req, res) {
-    db.User.findOneAndUpdate({ _id: req.params.id }, req.body)
+    db.Community.findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    db.User.findById({ _id: req.params.id })
+    db.Community.findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
@@ -72,31 +69,26 @@ const userController = {
 // Matches with "/api/users"
 router
   .route("/")
-  .get(function(req, res) {
-    db.User.findAll({})
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  })
-  .post(userController.create);
+  .get(communityController
+.findAll)
+  .post(communityController
+.create);
 
 
 // Matches with "/api/users/:id"
 // how to add api route that leads to dashboard.html after login button
 router
   .route("/:id")
-  .get(function(req, res) {
-    db.User.findById(req.params.id)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  })
+  .get(communityController
+.findById)
   
-  .put(userController.update)
-  .delete(userController.remove);
+  .put(communityController
+.update)
+  .delete(communityController
+.remove);
 router
 .route("/login")
-.post(userController.login)
-
-
+.post(communityController.login)
 
 
 module.exports = router;
