@@ -20,7 +20,15 @@ export default class Home extends React.Component {
         passwordRepeat: ""
         
         }
-      
+        
+handleLogin = () => {
+  window.location = "login";
+}
+
+handleRegister = () => {
+  window.location = "signup";
+}
+
         handleInputChange = event => {
           const { name, value } = event.target;
           this.setState({
@@ -31,7 +39,7 @@ export default class Home extends React.Component {
             return(
                 <div>
       {/* onclick should be its own function outside of the return function */}
-      <button onClick={this.showModal} id="btn1">Login</button>
+      <button onClick={this.handleLogin} id="btn1">Login</button>
 
       <div id="id01" className={this.state.show ? "modal display-block" : "modal display-none"}>
         <span onClick={this.hideModal}
@@ -68,7 +76,7 @@ export default class Home extends React.Component {
 
 
 
-      <button onClick={this.showModal1} id="btn2">Register</button>
+      <button onClick={this.handleRegister} id="btn2">Register</button>
 
       <div id="id02" className={this.state.show ? "modal display-block" : "modal display-none"}>
         <span onClick={this.hideModal} className="close" title="Close Modal">x</span>
