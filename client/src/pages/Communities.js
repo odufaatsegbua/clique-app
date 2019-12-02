@@ -1,4 +1,5 @@
 import React from "react";
+import "communities.css";
 export default class Communities extends React.Component {
   render() {
     return (
