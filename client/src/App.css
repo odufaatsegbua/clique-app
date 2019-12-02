@@ -1,0 +1,282 @@
+#nav-list {
+  padding-top: 0;
+}
+
+#btn1 {
+  margin-left: 34%;
+}
+
+#btn3 {
+  margin-left: 43%;
+}
+
+.centerpage {
+  background-image: url(./images/animation.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-left: auto;
+  height: 560px;
+}
+
+.container-about {
+  background-color: rgb(252, 157, 181);
+  background-size: cover;
+  height: 700px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#text {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  color: rgb(34, 61, 119);
+  font-size: 80px;
+  padding-top: 5%;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(34, 61, 119);
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(34, 61, 119);
+  
+}
+
+.container-community {
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  height: 700px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-connect {
+  background-color: rgb(34, 61, 119);
+  background-size: cover;
+  height: 700px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#ready-title {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 5%;
+  color: white;
+}
+
+#join-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+#signup-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+footer {
+  height: 300px;
+  background-color: rgb(252, 157, 181);
+}
+
+ul {
+  list-style: none;
+  color: rgb(34, 61, 119);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  padding-top: 4%;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom:0;
+  padding-top: 2%;
+}
+
+/* The Modal (background) */
+.modal {
+ /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: rgb(223, 137, 184);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(228, 133, 180);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 2%;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #214891;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: none;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  width: 250px;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #db8a9e;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
