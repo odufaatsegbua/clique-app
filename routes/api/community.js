@@ -16,43 +16,23 @@ const communityController = {
       .catch(err => res.status(422).json(err));
   },
 
-  // this route should direct to user dashboard if password is correct
-  login: function(req, res) {
   
-    // this should search database for where usersame 
-    // else res.send "incorrect username or password"
-    db.Community.findAll({where: {username:req.body.username}})
-      .then(dbModel =>{
-        bcrypt.compare(req.body.password, dbModel[0].password, (err, result) => {
-          if (result === true) {
-            res.json(dbModel);
-          } else {
-            res.send("Incorrect username or password!");
-          }
-        })}
-      )
-      .catch(err => res.status(422).json(err));
-  },
-  // creates new user in database
+  // creates new communities in database
   create: function(req, res) {
-    bcrypt.genSalt(saltRounds, function(err, salt) {
-      bcrypt.hash(req.body.password, salt, function(err, hash) {
+     
         console.log(req.body)
-        // Store hash in your password DB.
-        let newUser = {
-          firstname: req.body.firstname,
-          lastname: req.body.lastname,
-          username: req.body.username,
-          password: hash,
-          email: req.body.email,
-          description: req.body.description
+       
+        let newComm = {
+          category: req.body.category,
+          description: req.body.description,
         };
-        db.Community.create(newUser)
+
+        db.Community.create(newComm)
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));
-      });
-    });
-  },
+      
+},
+
   update: function(req, res) {
     db.Community.findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
@@ -86,9 +66,7 @@ router
 .update)
   .delete(communityController
 .remove);
-router
-.route("/login")
-.post(communityController.login)
+
 
 
 module.exports = router;

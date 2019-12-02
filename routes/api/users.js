@@ -85,7 +85,7 @@ router
 router
   .route("/:id")
   .get(function(req, res) {
-    db.User.findById(req.params.id)
+    db.User.findAll({where: {id: req.params.id}})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   })

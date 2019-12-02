@@ -4,6 +4,9 @@ import './App.css';
 import NoMatch from "./pages/NoMatch";
 import Home from "./pages/Home";
 import Communities from "./pages/Communities";
+import Community from "./components/Community";
+import Navbar from "./components/Navbar";
+
 import Dashboard from "./pages/Dashboard";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -17,9 +20,11 @@ class App extends React.Component {
     <div className="App">
       <Router>
         <div className="container">
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/communities" component={Communities} />
+            <Route exact path="/community" component={Community} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/profile" component={Dashboard} />

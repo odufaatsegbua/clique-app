@@ -1,30 +1,9 @@
 import React from "react";
+import "./communities.css";
 export default class Communities extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <div className="header-container">
-            <ul className="nav justifyContentCenter" id="navList">
-              <li className="navItem">
-                <a className="navLink" href="dashboard.html">
-                  Dashboard
-                </a>
-              </li>
-              <li className="navItem">
-                <a className="navLink" href="community.html">
-                  Communities
-                </a>
-              </li>
-              <li className="navItem">
-                <a className="navLink" href="">
-                  Get Connected
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
         <section>
           <h1>Discover a community for you</h1>
 
@@ -50,7 +29,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="messages.html">
                 <img
-                  src="../src/images/motherhood.jpg"
+                  src="images/motherhood.jpg"
                   alt="momtherhood"
                   style={{width:"100%"}}
                 />
@@ -62,7 +41,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="careermessages.html">
                 <img
-                  src="../src/images/career.jpg"
+                  src="images/career.jpg"
                   alt="career"
                   style={{width:"100%"}}
                 />
@@ -74,7 +53,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="relationships.html">
                 <img
-                  src="../src/images/relationships.jpg"
+                  src="images/relationships.jpg"
                   alt="relationships"
                   style={{width:"100%"}}
                 />
@@ -86,7 +65,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="selflove.html">
                 <img
-                  src="../src/images/selflove.jpg"
+                  src="images/selflove.jpg"
                   alt="selflove"
                   style={{width:"100%"}}
                 />
@@ -98,7 +77,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="nutritionfitness.html">
                 <img
-                  src="../src/images/food.jpg"
+                  src="images/food.jpg"
                   alt="nutritionfitness"
                   style={{width:"100%"}}
                 />
@@ -110,7 +89,7 @@ export default class Communities extends React.Component {
             <div className="content">
               <a href="mentalhealth.html">
                 <img
-                  src="../src/images/mentalhealth.jpg"
+                  src="images/mentalhealth.jpg"
                   alt="mentalhealth"
                   style={{width:"100%"}}
                 />
@@ -146,4 +125,5 @@ export default class Communities extends React.Component {
     );
   }
 }
+
 
