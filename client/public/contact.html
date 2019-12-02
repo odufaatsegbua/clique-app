@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/css/reset.css">
         <link rel="stylesheet" type="text/css" href="../src/style.css">
         <link rel="stylesheet" type="text/css" href="../src/info.css">
+        <link rel="stylesheet" type="text/css" href="../src/contact.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--Fonts Link-->
         <link
@@ -57,31 +58,40 @@
                     </li>
                 </ul>
             </div>
-         
+          
         </nav>
 
 
         <section>
 
-            <h1>About Clique</h1>
+            <h1>Contact Us</h1>
+
 
         </section>
 
-        <div class="info">
-
-            <h4>Our Mission</h4>
-            <p id="info">We exist to help women feel that they are not alone and that there is a place for them should they need it.</p>
-
-            <h4>Our Purpose</h4>
-            <p id="info">To create a safe and open space where women can be vulnerable, honest and receive support as well as give support to other women in need.</p>
-
-            <h4>Our Values</h4>
-            <p id="info"><strong>Vulnerability:</strong> We must be honest and vulnerable to be able to truly open up about our struggles and have real conversations about where we are and what we need to overcome our struggles.</p>
-            <p><strong>Inclusivity:</strong> We value diversity of age, ethnicity, gender, religion, ability, experience, class, size, and more.</p>
-
-            <h4>Our Work</h4>
-            <p id="info">Clique is a community of strong, curious, and ambitious women redefining success on our own terms. We are here to inform, entertain, and inspire action through the content and experiences we create. We are unapologetic in our beliefs and values of supporting girls and women who are chasing dreams both big and small.</p>
-        </div>
+        <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
 
         <section>
                 <footer>
@@ -95,10 +105,6 @@
                     <p>Copyright &copy; Clique</p>
                 </footer>
             </section>
-
-
-
-
     </body>
 
 </html>

@@ -1,31 +1,9 @@
 import React from "react";
-
+import "./communities.css";
 export default class Communities extends React.Component {
   render() {
     return (
       <div>
-        <nav>
-          <div className="header-container">
-            <ul className="nav justifyContentCenter" id="navList">
-              <li className="navItem">
-                <a className="navLink" href="dashboard.html">
-                  Dashboard
-                </a>
-              </li>
-              <li className="navItem">
-                <a className="navLink" href="community.html">
-                  Communities
-                </a>
-              </li>
-              <li className="navItem">
-                <a className="navLink" href="">
-                  Get Connected
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
         <section>
           <h1>Discover a community for you</h1>
 

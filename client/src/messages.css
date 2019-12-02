@@ -53,6 +53,15 @@ h1 {
       font-size: 17px;
   }
 
+
+form {
+  height: 700px;
+}
+
+.col-lg-8 {
+  margin-left: 16%;
+}
+
 button {
     background-color: rgb(252, 157, 181);
 }
