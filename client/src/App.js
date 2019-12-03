@@ -5,7 +5,6 @@ import NoMatch from "./pages/NoMatch";
 import Home from "./pages/Home";
 import Communities from "./pages/Communities";
 import Community from "./components/Community";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Signup from "./pages/Signup";
@@ -19,7 +18,6 @@ class App extends React.Component {
   return (
     <div className="App">
       <Router>
-          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/communities" component={Communities} />

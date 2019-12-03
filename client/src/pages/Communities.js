@@ -1,9 +1,11 @@
 import React from "react";
 import './communities.css';
+import Navbar from "../components/Navbar";
 export default class Communities extends React.Component {
   render() {
     return (
       <div>
+        <Navbar />
         <section>
           <h1>Discover a community for you</h1>
 

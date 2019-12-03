@@ -7,7 +7,7 @@ function Navbar() {
         <div className="header-container">
           <ul className="nav justify-content-center" id="navList">
             <li className="navItem">
-              <a className="navLink" href="/dashboard">
+              <a className="navLink" href="/profile">
                 Dashboard
               </a>
             </li>

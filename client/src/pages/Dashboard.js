@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Navbar from "../components/Navbar";
 import Axios from 'axios';
 
 export default class Dashboard extends React.Component {
@@ -35,7 +36,7 @@ export default class Dashboard extends React.Component {
     render() {
         return (
             <Fragment>
-
+                <Navbar />
             <div className="container">
                 <section>
                     <h1>Welcome {this.state.user.firstname} {this.state.user.lastname}</h1>
