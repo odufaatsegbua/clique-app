@@ -84,6 +84,75 @@ export default class Dashboard extends React.Component {
                         </div>
                     </div>
                 </div>
+              </form>
+        <hr />
+        <div id="userinfo" >
+
+          <form id="userinfo">
+              <label for="user-input">Name</label>
+              <input type="text" id="nameInput" /><br />
+        
+            
+
+              <label for="user-input">Email</label>
+              <input type="text" id="emailInput" /><br />
+        
+           
+
+              <label for="number-input">Phone Number</label>
+              <input type="text" id="numberInput" /><br />
+        
+           
+          </form>
+       
+        </div>
+        
+        <hr className="d-sm-none" />
+      </div>
+      <div className="col-sm-8">
+        <h2>Your Daily Message</h2>
+        <h5>Dec 5, 2019</h5>
+        <p>"Infuse your life with action. Don't wait for it to happen. Make it happen. Make your own future. Make your own hope. Make your own love. And whatever your beliefs, honor your creator, not by passively waiting for grace to come down from upon high, but by doing what you can to make grace happen... yourself, right now, right down here on Earth."</p>
+        <br />
+        <hr />
+        <h2>Your Communities</h2>
+        <h5>Communities you have joined</h5>
+        <div className="fakeimg">Fake Image</div>
+        <p>See here the communities you are a part of </p>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+</script>
+
+
+
+
+<section>
+    <footer>
+        <ul>
+           <a href="cliqueinfo.html"><li>About Us</li></a>
+            <a href=""><li>Contact</li></a>
+            <a href="cliqueFAQ.html"><li>FAQ</li></a>
+            <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
+            <a href=""><li>Legal</li></a>
+        </ul>
+        <p>Copyright &copy; Clique</p>
+    </footer>
+</section>          
+
+
+
+</section>  
+        </div>
 
                 <section>
                     <footer>
@@ -98,6 +167,7 @@ export default class Dashboard extends React.Component {
                     </footer>
                 </section>          
         </div >
+
     )
     }
 }
