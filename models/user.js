@@ -8,6 +8,11 @@ module.exports = function(sequelize, DataTypes) {
     password: DataTypes.STRING,
     description: DataTypes.TEXT
   });
-  // User.hasMany(, {foreignKey: 'countryCode', sourceKey: 'isoCode'});
+ User.associate = function(models) {
+User.hasMany(models.Post, {
+onDelete: "cascade"
+});
+
+ };
   return User;
 };
