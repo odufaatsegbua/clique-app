@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class Signup extends React.Component {
 state ={
@@ -7,8 +8,53 @@ lastname: "",
 username: "",
 email: "",
 password: "",
+description: ""
 
 };
+
+handleInputChange = event => {
+  const { name, value } = event.target;
+  this.setState({
+    [name]: value
+  });
+};
+
+handleFormSubmit = event => {
+  event.preventDefault();
+  axios.post(
+    "/api/users", {
+      firstname: this.state.firstname,
+      lastname: this.state.lastname,
+      username: this.state.username,
+      email: this.state.email,
+      password: this.state.password,
+      description: this.state.description
+    }
+  ).then(function(response){
+    console.log(response);
+    localStorage.setItem("userID", response.data.id);
+    window.location.replace("/profile")
+  })
+}
+// usersignup = () => {
+// .post
+// }
+
+
+
+// $(document).ready(function(){
+//   $("#submit").click(function(){
+//     $.post("/api/users",
+//     {
+//       username: $("#username").val(),
+//       password: $("#password").val()
+//     },
+//     function(data,status){
+//       var user = data;
+//       localStorage.setItem('userID', user.id);
+//     });
+//   });
+// });
 
 render() {
 return (
@@ -37,10 +83,14 @@ return (
         
         <input className="inputField" value={this.state.password} onChange={this.handleInputChange} type="password" placeholder="Password" name="password" />
       </div>
-    
-      <button type="submit" className="btn">Register</button>
-    </form>
 
+      <div className="inputContainer">
+      <label for="description">Tell us how we can support your current situation</label>
+        <input className="textArea" value={this.state.description} onChange={this.handleInputChange} type="text" placeholder="e.g Currenly in an abusive relationship" id="description" name="description" />
+      </div>
+    
+      <button type="submit" onClick={this.handleFormSubmit} className="btn">Register</button>
+    </form>
 
     <section>
         <footer>
@@ -58,3 +108,5 @@ return (
 )
 }
 }
+
+export default Signup;
