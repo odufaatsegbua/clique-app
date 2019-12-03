@@ -8,5 +8,6 @@ const userPostRoutes = require("./userPosts");
 
 router.use("/users", userRoutes);
 router.use("/community", communityRoutes);
+router.use("/post", userPostRoutes);
 
 module.exports = router;
