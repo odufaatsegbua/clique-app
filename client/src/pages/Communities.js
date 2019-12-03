@@ -99,28 +99,7 @@ export default class Communities extends React.Component {
           </div>
         </div>
 
-        <section>
-          <footer>
-            <ul>
-              <a href="cliqueinfo.html">
-                <li>About Us</li>
-              </a>
-              <a href="">
-                <li>Contact</li>
-              </a>
-              <a href="cliqueFAQ.html">
-                <li>FAQ</li>
-              </a>
-              <a href="cliqueguidelines.html">
-                <li>Community Guidelines</li>
-              </a>
-              <a href="">
-                <li>Legal</li>
-              </a>
-            </ul>
-            <p>Copyright &copy; Clique</p>
-          </footer>
-        </section>
+
       </div>
     );
   }

@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Communities from "./pages/Communities";
 import Community from "./components/Community";
 import Navbar from "./components/Navbar";
-
+import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -19,7 +19,6 @@ class App extends React.Component {
   return (
     <div className="App">
       <Router>
-        <div className="container">
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
@@ -34,7 +33,7 @@ class App extends React.Component {
 
             <Route component={NoMatch} />
           </Switch>
-        </div>
+          <Footer />
       </Router>
     </div>
   )
