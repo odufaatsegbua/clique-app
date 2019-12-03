@@ -73,6 +73,9 @@ export default class Dashboard extends React.Component {
                                     <label for="number-input">Phone Number</label>
                                     <input type="text" id="numberInput" /><br />
 
+                                    <label for="location-input">Location</label>
+                                    <input type="text" id="locationInput" /><br />
+
 
                                 </form>
 
@@ -89,7 +92,7 @@ export default class Dashboard extends React.Component {
                             <h2>Your Communities</h2>
                             <h5>Communities you have joined</h5>
                             <div className="fakeimg">Fake Image</div>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            
                         </div>
                     </div>
                 </div>
