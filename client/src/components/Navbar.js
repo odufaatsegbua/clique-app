@@ -16,11 +16,7 @@ function Navbar() {
                 Communities
               </a>
             </li>
-            <li className="navItem">
-              <a className="navLink" href="#">
-                Get Connected
-              </a>
-            </li>
+            
           </ul>
         </div>
       </nav>
