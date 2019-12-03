@@ -16,10 +16,12 @@ function Navbar() {
                 Communities
               </a>
             </li>
-            
           </ul>
         </div>
       </nav>
+      <a href="home" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+      </a>
     </div>
   );
 }
