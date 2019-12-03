@@ -35,6 +35,7 @@ h1 {
   footer {
       height: 300px;
       background-color: rgb(252, 157, 181);
+      max-width: 100%;
   }
   
   ul {
