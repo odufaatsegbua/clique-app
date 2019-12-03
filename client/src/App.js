@@ -26,7 +26,7 @@ class App extends React.Component {
             <Route exact path="/community" component={Community} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/profile" component={Dashboard} />
 
 
 

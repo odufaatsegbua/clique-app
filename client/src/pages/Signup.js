@@ -63,12 +63,12 @@ return (
       <h2>Register Form</h2>
       <div className="inputContainer">
       
-    <input className="inputField" value={this.state.firstname} onChange={this.handleInputChange} type="text" placeholder="Firstname" name="firstname" />
+    <input className="inputField" value={this.state.firstname} onChange={this.handleInputChange} type="text" placeholder="First name" name="firstname" />
       </div>
       <div className="inputContainer">
       <div className="inputContainer">
        
-        <input className="inputField" value={this.state.lastname} onChange={this.handleInputChange} type="text" placeholder="Lastname" name="lastname" />
+        <input className="inputField" value={this.state.lastname} onChange={this.handleInputChange} type="text" placeholder="Last name" name="lastname" />
       </div>
         
         <input className="inputField" value={this.state.username} onChange={this.handleInputChange} type="text" placeholder="Username" name="username" />
@@ -86,7 +86,7 @@ return (
 
       <div className="inputContainer">
       <label for="description">Tell us how we can support your current situation</label>
-        <input className="textArea" value={this.state.description} onChange={this.handleInputChange} type="text" placeholder="e.g Currenly in an abusive relationship" id="description" name="description" />
+        <input className="textArea" value={this.state.description} onChange={this.handleInputChange} type="text" placeholder="e.g I'm currently in an abusive relationship and need help getting out safely" id="description" name="description" />
       </div>
     
       <button type="submit" onClick={this.handleFormSubmit} className="btn">Register</button>
