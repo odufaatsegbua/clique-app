@@ -68,7 +68,7 @@ render() {
         <h2>Your Communities</h2>
         <h5>Communities you have joined</h5>
         <div className="fakeimg">Fake Image</div>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p>See here the communities you are a part of </p>
       </div>
     </div>
   </div>
