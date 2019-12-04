@@ -17,11 +17,12 @@ function Navbar() {
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
-      <a href="#" class="btn btn-info btn-lg">
+          <a href="#" class="btn btn-info btn-sm" id="logout">
           <span class="glyphicon glyphicon-log-out"></span> Log out
         </a>
+        </div>
+      </nav>
+      
     </div>
   );
 }
