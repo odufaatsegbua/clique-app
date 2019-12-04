@@ -6,22 +6,11 @@ const saltRounds = 13;
 
 // Defining methods for the userController
 const userController = {
-  findAll: function(req, res) {
-    db.User.findAll({})
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
-  
-  // will search database for specific ID
-  findById: function(req, res) {
-    db.User.findById(req.params.id)
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
+
 
   // this route should direct to user dashboard if password is correct
   login: function(req, res) {
-  
+    console.log(req.body.username, req.body.password)
     // this should search database for where usersame 
     // else res.send "incorrect username or password"
     db.User.findAll({where: {username:req.body.username}})
@@ -57,8 +46,12 @@ const userController = {
     });
   },
   update: function(req, res) {
-    db.User.findOneAndUpdate({ _id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
+    db.User.update(req.body, {where:{id: req.params.id}}).then((rows) =>{
+      console.log(rows)
+      db.User.findAll(
+        {where:{id: req.params.id}}
+      ).then(dbModel => res.json(dbModel))
+    })
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
