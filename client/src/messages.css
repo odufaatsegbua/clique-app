@@ -1,6 +1,7 @@
 
 a {
   color: black;
+  font-size: 18px;
 }
 
 #nav-list {
@@ -26,7 +27,7 @@ h1 {
   h3 {
     font-family: 'Gupter', serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(34, 61, 119);
     
   }
@@ -44,6 +45,18 @@ h1 {
 
   .card-header {
     background-color: rgb(252, 157, 181);
+}
+
+.card-footer {
+  background-color: rgba(201, 200, 200, 0.89);
+}
+
+.row {
+  padding-bottom: 15%;
+}
+
+#textarea {
+  height: 150px;
 }
   
   footer {
@@ -79,6 +92,12 @@ form {
 
 button {
     background-color: rgb(252, 157, 181);
+    margin-top: 5%;
+    margin-left: 43%;
+}
+
+.btn-primary {
+  margin-left: 40%;
 }
     
   

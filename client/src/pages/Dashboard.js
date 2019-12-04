@@ -37,6 +37,7 @@ export default class Dashboard extends React.Component {
         return (
             <Fragment>
                 <Navbar />
+                <hr />
             <div className="container">
                 <section>
                     <h1>Welcome {this.state.user.firstname} {this.state.user.lastname}</h1>

@@ -19,9 +19,9 @@ function Navbar() {
           </ul>
         </div>
       </nav>
-      <a href="home" class="btn btn-info btn-lg">
+      <a href="#" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-log-out"></span> Log out
-      </a>
+        </a>
     </div>
   );
 }
