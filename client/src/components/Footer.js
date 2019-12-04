@@ -11,7 +11,7 @@ export default function Footer() {
             <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
             <a href="NoMatch"><li>Legal</li></a>
         </ul>
-        <p className="pt-0">Copyright &copy; Clique by Daniela Chavez & Odufa Atsegbua</p>
+        <p className="pt-0" id="copyright">Copyright &copy; Clique by Daniela Chavez & Odufa Atsegbua</p>
     </footer>
 </section>  
     )
