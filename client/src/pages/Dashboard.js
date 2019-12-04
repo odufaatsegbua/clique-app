@@ -92,7 +92,9 @@ export default class Dashboard extends React.Component {
                             <hr />
                             <h2>Your Communities</h2>
                             <h5>Communities you have joined</h5>
-                            <div className="fakeimg"></div>
+                            <div className="fakeimg">
+                                
+                            </div>
                             
                         </div>
                     </div>
