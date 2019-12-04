@@ -162,7 +162,12 @@ return (
         <div className="card my-4">
           <h5 className="card-header">Side Widget</h5>
           <div className="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+          <a href="#" class="fa fa-facebook"></a> 
+                          <a href="#" class="fa fa-twitter"></a>
+                          <a href="#" class="fa fa-instagram"></a>
+                          <a href="#" class="fa fa-google"></a>
+                          <a href="#" class="fa fa-linkedin"></a>
+                          <a href="#" class="fa fa-snapchat-ghost"></a>
           </div>
         </div>
 

@@ -4,6 +4,10 @@ body {
     height: 1200px;
 }
 
+ul {
+  margin: 5px;
+}
+
 a {
   color: black;
   padding: 8px;
@@ -14,8 +18,14 @@ a {
   margin-top: 0;
 }
 
-.btn-smg {
-  margin-left: 150%;
+li.navItem {
+  margin-right: 5%;
+}
+
+.btn {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 93%;
 }
 
 /* Container for flexboxes */
