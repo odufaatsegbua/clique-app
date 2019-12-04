@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Section.80",
+    "password": "root",
     "database": "clique_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

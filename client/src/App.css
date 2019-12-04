@@ -1,3 +1,5 @@
+
+
 #nav-list {
   padding-top: 0;
 }
@@ -97,6 +99,7 @@ h3 {
 footer {
   height: 300px;
   background-color: rgb(252, 157, 181);
+  max-width: 100%;
 }
 
 ul {
@@ -212,7 +215,7 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.signupbtn {
   float: left;
   width: 30%;
 }

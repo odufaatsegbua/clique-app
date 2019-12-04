@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Navbar from "../components/Navbar";
 import Axios from 'axios';
 
 export default class Dashboard extends React.Component {
@@ -26,15 +27,23 @@ export default class Dashboard extends React.Component {
             console.log("state " + (this.state.user))
         })
     }
+//     <script>
+//     $(".custom-file-input").on("change", function() {
+//       var fileName = $(this).val().split("\\").pop();
+//       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+//     });
+// </script>
     render() {
         return (
-            <div>
+            <Fragment>
+                <Navbar />
+            <div className="container">
                 <section>
                     <h1>Welcome {this.state.user.firstname} {this.state.user.lastname}</h1>
                 </section>
                 <hr />
                 <div className="container" style={{ marginTop: "30px" }} >
-                    <div className="row">
+                    <div className="row mb-3">
                         <div className="col-sm-4">
                             <h2>About Me</h2>
                             <h5>Upload a photo</h5>
@@ -85,19 +94,19 @@ export default class Dashboard extends React.Component {
                     </div>
                 </div>
 
-                <section>
-                    <footer>
-                        <ul>
-                            <a href="cliqueinfo.html"><li>About Us</li></a>
-                            <a href=""><li>Contact</li></a>
-                            <a href="cliqueFAQ.html"><li>FAQ</li></a>
-                            <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
-                            <a href=""><li>Legal</li></a>
-                        </ul>
-                        <p>Copyright &copy; Clique</p>
-                    </footer>
-                </section>          
-        </div >
+    </div>
+  
+
+
+
+
+
+
+
+        
+      
+        </Fragment>
+
     )
     }
 }
