@@ -14,8 +14,10 @@ a {
   margin-top: 0;
 }
 
-.btn-smg {
-  margin-left: 150%;
+.btn {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 93%;
 }
 
 /* Container for flexboxes */
