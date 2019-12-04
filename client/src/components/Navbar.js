@@ -17,7 +17,7 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <a href="#" class="btn btn-info btn-sm" id="logout">
+          <a onClick={()=> {localStorage.removeItem("userID"); window.location.replace("/")}} class="btn btn-info btn-sm" id="logout">
           <span class="glyphicon glyphicon-log-out"></span> Log out
         </a>
         </div>
