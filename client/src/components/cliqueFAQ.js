@@ -80,10 +80,10 @@ export default class Community extends React.Component {
     <footer>
         <ul>
                 <a href="cliqueinfo.html"><li>About Us</li></a>
-                <a href=""><li>Contact</li></a>
+                <a href="contact.html"><li>Contact</li></a>
                 <a href="cliqueFAQ.html"><li>FAQ</li></a>
                 <a href="cliqueguidelines.html"><li>Community Guidelines</li></a>
-                <a href="#"><li>Legal</li></a>
+                <a href="NoMatch"><li>Legal</li></a>
         </ul>
         <p>Copyright &copy; Clique</p>
     </footer>
