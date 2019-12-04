@@ -12,6 +12,7 @@ function NoMatch() {
                 🙄
               </span>
             </h1>
+            <h2>Sorry Darling! The page you're looking for is under construction!</h2>
           </div>
         </div>
       </div>

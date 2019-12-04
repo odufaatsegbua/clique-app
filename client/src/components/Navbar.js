@@ -16,14 +16,13 @@ function Navbar() {
                 Communities
               </a>
             </li>
-            <li className="navItem">
-              <a className="navLink" href="#">
-                Get Connected
-              </a>
-            </li>
           </ul>
+          <a href="#" class="btn btn-info btn-sm" id="logout">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
         </div>
       </nav>
+      
     </div>
   );
 }

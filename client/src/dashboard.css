@@ -1,10 +1,22 @@
 
-
 body {
     background-color: white;
     height: 1200px;
 }
 
+a {
+  color: black;
+  padding: 8px;
+}
+
+#navList {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.btn-smg {
+  margin-left: 150%;
+}
 
 /* Container for flexboxes */
 .row-one {
@@ -41,14 +53,14 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Gupter', serif;
   text-align: center;
   font-size: 40px;
   color: rgb(34, 61, 119);
 }
 
 h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Gupter', serif;
   text-align: center;
   font-size: 30px;
   color: rgb(34, 61, 119);
@@ -56,7 +68,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Gupter', serif;
   font-size: 25px;
   text-align: center;
   color: rgb(22, 22, 22);
@@ -76,16 +88,19 @@ footer {
 ul {
     list-style: none;
     color: rgb(34, 61, 119);
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Gupter', serif;
     font-size: 25px;
     padding-top: 4%;
+}
+
+#copyright {
+  font-size: 15px;
 }
 
 p {
     text-align: center;
     padding-bottom: 0;
     margin-bottom:0;
-
     padding-top: 2%;
 }
   
@@ -97,9 +112,6 @@ p {
     }
   }
 
-    padding-top: 3%;
-    font-size: 17px;
-}
   
 
 

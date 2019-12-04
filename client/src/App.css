@@ -1,7 +1,10 @@
 
-
 #nav-list {
   padding-top: 0;
+}
+
+a {
+  color: black;
 }
 
 #btn1 {
@@ -44,18 +47,22 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Gupter', serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(34, 61, 119);
 }
 
 h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Gupter', serif;
   text-align: center;
   font-size: 30px;
   color: rgb(34, 61, 119);
   
+}
+
+h5 {
+  text-align: center;
 }
 
 .container-community {
