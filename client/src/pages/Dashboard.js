@@ -19,6 +19,9 @@ export default class Dashboard extends React.Component {
     //   });
     componentDidMount(){
         const userId = localStorage.getItem("userID");
+        if (userId === null){
+            window.location.replace("/")
+        }
         Axios.get("/api/users/" + userId)
         .then((response) => {
             console.log(response)
@@ -44,8 +47,10 @@ export default class Dashboard extends React.Component {
             birthdate: this.state.birthdate,
             interests: this.state.interests
           }
-        ).then(function(response){
-          console.log(response);
+        ).then((response) =>{
+            this.setState({
+                user: response.data[0]
+            })
         })
       }
     render() {
