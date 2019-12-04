@@ -4,6 +4,10 @@ body {
     height: 1200px;
 }
 
+ul {
+  margin: 5px;
+}
+
 a {
   color: black;
   padding: 8px;
@@ -12,6 +16,10 @@ a {
 #navList {
   padding-top: 0;
   margin-top: 0;
+}
+
+li.navItem {
+  margin-right: 5%;
 }
 
 .btn {
